@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <style>
+        .background-image {
+            background-image: url("beemo.jpg");
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            border: 2px solid black;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .profile {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 2px solid black;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+        }
+
+        .row {
+            display: flex;
+            margin-top: 60px;
+            margin-left: 50px;
+        }
+
+        .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        p, table {
+            font-size: 20px;
+            margin: 0px;
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+
+        table {
+            padding-left: 20px;
+            border: 0px;
+            margin: auto;
+            margin-top: -5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background-image">
+    <img class="profile" src="download.jpg">
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <h1>My Story</h1>
+        <p>Cuộc sống của mỗi chúng ta do chúng ta tự tạo ra vì vậy đừng than trách hay đổ lỗi cho người khác. Nếu bạn muốn cuộc sống của bạn tốt hơn, ý nghĩa hơn thì ngay từ bây giờ hãy thay đổi thái độ sống của mình đi.</p>
+    </div>
+    <div class="col-6">
+        <h1>My Profile</h1>
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td>Lê Ngọc Huy</td>
+            </tr>
+            <tr>
+                <td>School: </td>
+                <td>Ha Noi University of Sience and Technology</td>
+            </tr>
+            <tr>
+                <td>Class: </td>
+                <td>Information Technology Specialist 02-K62</td>
+            </tr>
+            <tr>
+                <td>Age: </td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Facebook: </td>
+                <td><a href="https://www.facebook.com/huy1407">https://www.facebook.com/huy1407</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
