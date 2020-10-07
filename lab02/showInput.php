@@ -1,24 +1,27 @@
 <?php
-if (isset($_POST['formInput'])) {
-    $name = $_POST['name'];
-    $uni = $_POST['uni'];
-    $class = $_POST['class'];
+if (isset($_POST['submitPostData'])) {
+    if (!empty($_POST['fname'])) {
+        echo 'Name : '.$_POST['fname']."<br>";
+    }
+    if (!empty($_POST['lname'])) {
+        echo 'Class : '.$_POST['lname']."<br>";
+    }
+    if (isset($_POST['hobby1'])) {
+        echo 'Hobby 1: '.$_POST['hobby1']."<br>";
+    }
 
-    echo "Your Information" . '<br>';
-    if (isset($name)) {
-        echo "Name: " . $name . '<br>';
+    if (isset($_POST['hobby2'])) {
+        echo 'Hobby 2: '.$_POST['hobby2']."<br>";
     }
-    if (isset($uni)) {
-        echo "University: " . $uni . '<br>';
+
+    if (isset($_POST['hobby3'])) {
+        echo  'Hobby 3: '.$_POST['hobby3']."<br>";
     }
-    if (isset($class)) {
-        echo "Class: " . $class . '<br>';
+    if (!empty($_POST['university'])) {
+
+        echo 'University: '.$_POST['university'];
     }
-    if (isset($_POST['hobby'])) {
-        echo "Hobby: ";
-        foreach($_POST['hobby'] as $hobby) {
-            echo '<br>' . $hobby;
-        }
-    }
+
 }
+
 ?>
